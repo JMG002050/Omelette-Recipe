@@ -1,0 +1,132 @@
+/*adding fonts*/
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url(fonts/yung-serif/YoungSerif-Regular.ttf);
+}
+
+/*Universal efx*/
+* {
+    word-spacing: 4px;
+}
+
+h1, h2 {
+   font-family: Young-serif;
+}
+
+p, h4, ol, ul, tr, th, td {
+    font-family: Outfit;
+    line-height: 1.5;
+}
+
+ol, ul {
+    text-indent: 25px;
+    list-style-position: outside;
+}
+
+h2, td {
+    color: hsl(14, 45%, 36%);
+}
+
+hr {
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+.ingre, .inst {
+    margin-left: 2.8%;
+}
+
+/*Universal efx*/
+
+body {
+    background-color: hsl(27, 34%, 90%);
+    margin-top: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+}
+
+.recipe {
+    background-color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 5%;
+    border-radius: 30px;
+    margin: auto;
+}
+
+img {
+    width: 95%;
+    height: 50%;
+    display: block;
+    margin-left: 40px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.simple {
+    margin-left: 40px;
+    margin-top: 75px;
+}
+
+h4 {
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation {
+    margin-left: 40px;
+    margin-top: 50px;
+    background-color: hsl(332, 51%, 95%);
+    padding: 20px;
+    padding-left: 35px;
+    border-radius: 15px;
+    word-spacing: 5px;
+}
+
+.ingredients {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+li {
+    margin-bottom: 15px;
+    text-indent: 0px;
+}
+
+.instructions {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.nutrition {
+    margin-left: 40px;
+    margin-right: 60px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 135%;
+}
+
+td {
+    padding: 10px;
+    display: table-cell;
+    color: black;
+}
+
+.numbers {
+    color: rgb(164, 53, 53);
+}
+
+tr {
+    border-bottom: 1px solid rgb(164, 53, 53);   
+}
