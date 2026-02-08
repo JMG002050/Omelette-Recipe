@@ -1,0 +1,143 @@
+/* Adding custom fonts for the webpage */
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-display: swap; /* Ensures text remains visible while the font loads */
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url(fonts/yung-serif/YoungSerif-Regular.ttf);
+    font-display: swap;
+}
+
+/* Typography settings for headings and text */
+h1, h2 {
+   font-family: YoungSerif, serif; /* Using the custom serif font for titles */
+}
+
+p, h4, ol, ul, tr, th, td {
+    font-family: Outfit, sans-serif; /* Using the custom sans-serif font for content */
+    line-height: 1.5; /* Improving readability with proper spacing */
+}
+
+ol, ul {
+    text-indent: 25px; /* Indentation for lists */
+    list-style-position: outside; /* Ensuring bullets align outside of the text block */
+}
+
+h2, td {
+    color: hsl(14, 45%, 36%); /* Adding color to headings and table data */
+}
+
+hr {
+    margin-top: 3%; /* Adding space above the horizontal rule */
+    margin-left: 6%; /* Adjusting left spacing */
+}
+
+ingre, .inst {
+    margin-left: 2.8%; /* Ensuring uniform left margin for ingredients and instructions */
+}
+
+/* Layout and spacing configurations */
+body {
+    background-color: hsl(27, 34%, 90%); /* Light background for better contrast */
+    margin-top: 100px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 5vh;
+}
+
+.recipe {
+    background-color: white;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    padding-right: 5%;
+    margin: auto;
+    border-radius: 30px; /* Adding rounded corners for a smoother look */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.container {
+    display: grid;
+    place-items: center; /* Centers the image inside the container */
+}
+
+img {
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50px; /* Rounded corners */
+    margin-left: 5%;
+}
+
+.simple {
+    max-width: 100%;
+    margin-left: 17px;
+    margin-top: 75px; /* Adjusting space for readability */
+}
+
+h4 {
+    color: hsl(332, 51%, 32%); /* Highlighting subheadings */
+}
+
+.preparation {
+    max-width: 100%;
+    margin-top: 50px;
+    margin-left: 5%;
+    background-color: hsl(332, 51%, 95%); /* Soft background for preparation section */
+    padding: 20px;
+    padding-left: 35px;
+    border-radius: 15px; /* Rounded corners for aesthetics */
+    word-spacing: 5px; /* Improving text spacing */
+    box-sizing: border-box;
+}
+
+.ingredients {
+    margin-left: 17px;
+    margin-top: 50px;
+}
+
+li {
+    margin-bottom: 15px; /* Adding space between list items */
+    text-indent: 0px;
+}
+
+.instructions {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+/* TABLE */
+.nutrition {
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+td {
+    color: black;
+    max-width: 100%;
+}
+
+.numbers {
+    color: rgb(164, 53, 53); 
+}
+
+tr {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr; /*This separated the elements*/
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgb(164, 53, 53);
+}
+
+
