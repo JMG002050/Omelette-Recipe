@@ -13,7 +13,7 @@
 
 /* GENERAL STYLE */
 
-p, ol, ul, tr, th, td {
+p, ol, ul {
     font-family: Outfit, sans-serif; 
     line-height: 1.5; 
     font-size: 1.4rem;
@@ -24,7 +24,7 @@ ol, ul {
     list-style-position: outside; 
 }
 
-h2, td {
+h2 {
     color: hsl(14, 45%, 36%);
 }
 
@@ -42,6 +42,12 @@ h2, td {
     font-size: 2.5rem;
 }
 
+section + section {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid hsl(14, 45%, 80%);
+}
+
 /* Layout and spacing configurations */
 body {
     background-color: hsl(27, 34%, 90%); 
@@ -50,7 +56,7 @@ body {
 .recipe {
     background-color: white;
     padding: 1.5rem;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     max-width: 50rem;
     margin: 0 auto; 
 }
@@ -61,12 +67,9 @@ body {
     border-radius: 1rem;
 }
 
-/* img {
-    max-width: 100%;
-    height: auto; 
-    display: block;
-    border-radius: 1rem; 
-} */
+figcaption {
+    font-family: Outfit, sans-serif; 
+}
 
 .title {
     font-size: 3rem;
@@ -74,7 +77,7 @@ body {
 
 .simple {
     max-width: 100%;
-    margin-top: 75px; 
+    margin-top: 4.6875rem; 
 }
 
 .prep-time {
@@ -84,10 +87,10 @@ body {
 
 .preparation {
     max-width: 100%;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     background-color: hsl(332, 51%, 95%); 
-    padding: 20px;
-    padding-left: 35px;
+    padding: 1.25rem;
+    padding-left: 2.1875rem;
     border-radius: 15px;
     word-spacing: 5px; 
     box-sizing: border-box;
@@ -98,7 +101,7 @@ body {
 }
 
 .ingredients {
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .ingredients ul li::marker {
@@ -111,39 +114,41 @@ li {
 }
 
 .instructions {
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .instructions ol li::marker {
     color: hsl(14, 45%, 36%);
 }
 
-/* TABLE */
 .nutrition {
     max-width: 100%;
 }
 
-table {
-    width: 100%;
-}
-
-.numbers {
-    color: rgb(164, 53, 53);
-    font-weight: 600;
-    letter-spacing: 0.02em;
-}
-
-tr {
+.nutrition-list div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 1.2rem 0;
     border-bottom: 1px solid rgb(164, 53, 53);
 }
 
+.nutrition-list dt {
+    font-weight: 500;
+}
+
+.nutrition-list dd {
+    margin: 0;
+    font-weight: 500;
+    color: rgb(164, 53, 53);
+}
+
+dt, dd {
+    font-family: Outfit, sans-serif; 
+    font-size: 1.3rem;
+}
 
 /* MOBILE FRIENDLY IMPROVEMENT */
-@media (max-width: 480px) {
+@media (max-width: 30em) {
     .recipe {
         padding: 1rem;
         border-radius: 20px;
