@@ -1,8 +1,8 @@
-/* Adding custom fonts for the webpage */
+/* FONTS */
 @font-face {
     font-family: Outfit;
     src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
-    font-display: swap; /* Ensures text remains visible while the font loads */
+    font-display: swap; 
 }
 
 @font-face {
@@ -11,133 +11,149 @@
     font-display: swap;
 }
 
-/* Typography settings for headings and text */
-h1, h2 {
-   font-family: YoungSerif, serif; /* Using the custom serif font for titles */
-}
+/* GENERAL STYLE */
 
-p, h4, ol, ul, tr, th, td {
-    font-family: Outfit, sans-serif; /* Using the custom sans-serif font for content */
-    line-height: 1.5; /* Improving readability with proper spacing */
+p, ol, ul, tr, th, td {
+    font-family: Outfit, sans-serif; 
+    line-height: 1.5; 
+    font-size: 1.4rem;
 }
 
 ol, ul {
-    text-indent: 25px; /* Indentation for lists */
-    list-style-position: outside; /* Ensuring bullets align outside of the text block */
+    padding-left: 1.5rem; 
+    list-style-position: outside; 
 }
 
 h2, td {
-    color: hsl(14, 45%, 36%); /* Adding color to headings and table data */
+    color: hsl(14, 45%, 36%);
 }
 
-hr {
-    margin-top: 3%; /* Adding space above the horizontal rule */
-    margin-left: 6%; /* Adjusting left spacing */
+.simple,
+.ingredients,
+.instructions,
+.nutrition {
+    margin-left: 0;
 }
 
-ingre, .inst {
-    margin-left: 2.8%; /* Ensuring uniform left margin for ingredients and instructions */
+.ingre-title,
+.inst-title,
+.nutri-title
+{
+    font-size: 2.5rem;
 }
 
 /* Layout and spacing configurations */
 body {
-    background-color: hsl(27, 34%, 90%); /* Light background for better contrast */
-    margin-top: 100px;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding-bottom: 5vh;
+    background-color: hsl(27, 34%, 90%); 
 }
 
 .recipe {
     background-color: white;
-    padding-top: 8%;
-    padding-bottom: 10%;
-    padding-right: 5%;
-    margin: auto;
-    border-radius: 30px; /* Adding rounded corners for a smoother look */
+    padding: 1.5rem;
+    border-radius: 30px;
+    max-width: 50rem;
+    margin: 0 auto; 
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+.recipe img {
+    margin-inline: -1.5rem;
+    width: calc(100% + 3rem);
+    border-radius: 1rem;
 }
 
-.container {
-    display: grid;
-    place-items: center; /* Centers the image inside the container */
-}
+/* img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    border-radius: 1rem; 
+} */
 
-img {
-    max-width: 100%; /* Makes image responsive */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 50px; /* Rounded corners */
-    margin-left: 5%;
+.title {
+    font-size: 3rem;
 }
 
 .simple {
     max-width: 100%;
-    margin-left: 17px;
-    margin-top: 75px; /* Adjusting space for readability */
+    margin-top: 75px; 
 }
 
-h4 {
-    color: hsl(332, 51%, 32%); /* Highlighting subheadings */
+.prep-time {
+    color: hsl(332, 51%, 32%); 
+    font-family: Outfit, sans-serif;
 }
 
 .preparation {
     max-width: 100%;
     margin-top: 50px;
-    margin-left: 5%;
-    background-color: hsl(332, 51%, 95%); /* Soft background for preparation section */
+    background-color: hsl(332, 51%, 95%); 
     padding: 20px;
     padding-left: 35px;
-    border-radius: 15px; /* Rounded corners for aesthetics */
-    word-spacing: 5px; /* Improving text spacing */
+    border-radius: 15px;
+    word-spacing: 5px; 
     box-sizing: border-box;
 }
 
+.preparation ul li::marker {
+    color: rgb(164, 53, 53); ;
+}
+
 .ingredients {
-    margin-left: 17px;
     margin-top: 50px;
 }
 
+.ingredients ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
 li {
-    margin-bottom: 15px; /* Adding space between list items */
+    margin-bottom: 15px;
     text-indent: 0px;
 }
 
 .instructions {
-    margin-left: 10px;
     margin-top: 50px;
+}
+
+.instructions ol li::marker {
+    color: hsl(14, 45%, 36%);
 }
 
 /* TABLE */
 .nutrition {
     max-width: 100%;
-    margin-left: 20px;
 }
 
 table {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-td {
-    color: black;
-    max-width: 100%;
 }
 
 .numbers {
-    color: rgb(164, 53, 53); 
+    color: rgb(164, 53, 53);
+    font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
 tr {
-    display: grid;
-    grid-template-columns: 2fr 0.5fr; /*This separated the elements*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1.2rem 0;
     border-bottom: 1px solid rgb(164, 53, 53);
 }
+
+
+/* MOBILE FRIENDLY IMPROVEMENT */
+@media (max-width: 480px) {
+    .recipe {
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    .title {
+        font-size: 2.4rem;
+    }
+}
+
+
 
 
