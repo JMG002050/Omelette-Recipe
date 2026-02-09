@@ -20,8 +20,11 @@
     --light-pink: hsl(332, 51%, 95%);
 }
 
-p, ol, ul {
+p, ol, ul, figcaption {
     font-family: Outfit, sans-serif; 
+}
+
+p, ol, ul {
     line-height: 1.5; 
     font-size: 1.4rem;
 }
@@ -62,8 +65,7 @@ body {
 
 .recipe {
     background-color: white;
-    padding-inline: 1.5rem;
-    border-radius: 1.875rem;
+    border-radius: 1rem;
     max-width: clamp(20rem, 90vw, 50rem);;
     margin: 0 auto; 
 }
@@ -72,10 +74,6 @@ body {
     display: block;
     width: 100%;
     border-radius: 1rem;
-}
-
-figcaption {
-    font-family: Outfit, sans-serif; 
 }
 
 .title {
@@ -158,12 +156,12 @@ dt, dd {
 /* MOBILE FRIENDLY IMPROVEMENT */
 @media (min-width: 30.01em) {
     .recipe {
-        padding: 2rem;          /* More padding on larger screens */
-        border-radius: 0;       /* Remove rounding on desktop */
+        padding: 2rem;          
+        border-radius: 1rem;    
     }
 
     .title {
-        font-size: 3rem;        /* Larger font on desktop */
+        font-size: 3rem;        
     }
 }
 
