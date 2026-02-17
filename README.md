@@ -5,6 +5,11 @@ This project focuses on practicing **semantic HTML**, **basic accessibility**, a
 
 ---
 
+## 📑 Live Demo 
+➡️[Click this link to see the site live](https://jmg002050.github.io/Omelette-Recipe/)
+
+---
+
 ## 📸 Preview
 ![MacBook Pro-1770683402921](https://github.com/user-attachments/assets/f7e1c2a3-ad5e-4426-8a26-6418de2744f8)
 ---
